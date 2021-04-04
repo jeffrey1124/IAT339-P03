@@ -10,6 +10,18 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.text-link {
+  text-decoration: none;
+  color: black;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #009CCF;
+  text-decoration-color: #009CCF;
+}
+
 /* navigation */
 .topnav {
   overflow: hidden;
@@ -190,6 +202,12 @@ body {
   overflow: hidden;
 }
 
+/* .wrapper p{
+  border: 2px solid white;
+  font-weight: bold;
+  font-size: 3rem;
+
+} */
 .dynamic-txts li {
   margin-left: 1rem;
   list-style: none;
@@ -253,9 +271,31 @@ body {
   }
 }
 
+.bio {
+  font-weight: 300;
+  font-size: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.bio span {
+  color: #009CCF;
+  font-weight: 500;
+}
+
+h3 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 /* project images */
 .project-img img {
-  margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   display: block;
   margin-left: auto;
@@ -271,6 +311,214 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
+.pj-banner img {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.p1 {
+  width: 70%;
+  margin: 2rem auto 2rem auto;
+}
+
+.p1 h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.p1 h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #53565A;
+  margin-top: 1rem;
+}
+
+.p2 {
+  background-color: #e6ffea;
+  padding-bottom: 1rem;
+}
+
+.pj-head {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  color: black;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+/* project-columns */
+.project-list p {
+  padding-top: 0.5rem;
+}
+
+.project-list p span {
+  font-weight: bold;
+}
+
+.p1 ul {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.p1 ul li {
+  padding: 0.5rem;
+}
+
+.p1 ul span {
+  font-weight: 600;
+}
+
+.col {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 25%;
+}
+
+.two-col {
+  /* border: 1px solid black; */
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.two-col span {
+  margin-top: 2rem;
+}
+
+.two-col img {
+  margin: 1rem auto 1rem auto;
+  display: block;
+  width: 100%;
+}
+
+.project-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .two-col {
+    width: 100%;
+  }
+
+  .col {
+    width: 100%;
+  }
+}
+
+/* slideshow */
+.mySlides {
+  display: none;
+  margin-bottom: 5rem;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container img{
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #009CCF;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.slidetext {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #009CCF;
+  font-size: 1rem;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .slidetext {
+    font-size: 11px
+  }
+}
+
+/* footer */
 .myFooter {
   left: 0;
   bottom: 0;
@@ -280,7 +528,7 @@ body {
   text-align: center;
 }
 
-.myFooter a{
+.myFooter a {
   font-weight: bold;
   text-decoration: none;
   color: white;
