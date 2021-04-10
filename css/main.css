@@ -342,6 +342,21 @@ h3 {
   padding-bottom: 1rem;
 }
 
+.iframe-container{
+  margin: 1rem 0 1rem 0;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .p3{
   background-color: #c0ebfb;
   padding-bottom: 1rem;
