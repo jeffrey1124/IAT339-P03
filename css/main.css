@@ -342,6 +342,11 @@ h3 {
   padding-bottom: 1rem;
 }
 
+.p3{
+  background-color: #c0ebfb;
+  padding-bottom: 1rem;
+}
+
 .pj-head {
   padding-top: 2rem;
   margin-bottom: 2rem;
@@ -512,9 +517,9 @@ h3 {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 422px) {
   .prev, .next, .slidetext {
-    font-size: 11px
+    font-size: 11px;
   }
 }
 
