@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About me</title>
+  <script src="https://kit.fontawesome.com/6318b47d97.js"></script>
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Top Navigation -->
+  <nav class="topnav" id="myTopnav">
+    <a href="Home.html" class="myName">Jeffrey Chen</a>
+    <div class="toright">
+      <a href="Home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Projects
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="project1.html">Project 1</a>
+          <a href="project2.html">Project 2</a>
+        </div>
+      </div>
+      <a href="fun.html">Film For Fun</a>
+      <a href="about.html">About Me</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+  </nav>
+
+  <div class="pj-banner">
+    <img src="imgs/banner4.png" alt="A picture of sea">
+  </div>
+
+  <div class="p1">
+    <h1 id="aboutmyself">More about myself:</h1>
+    <div class="project-list">
+      <div class="col left">
+        <p>My name is Huaiyan Chen (陈怀炎) or Jeffrey. I was born and raised in China. Moved to Canada when I was twelve. I am currently an undergraduate student in the School of Interactive Arts & Technology (SIAT) at Simon Fraser University. I have some
+          background in programming because I took computer science courses as my elective courses. I am passionate about studying different interface designs and eager to learn new things everyday.</p>
+        <h2>Other than design:</h2>
+        <p>I enjoy travelling around during my free time and create short vlogs for different journeys. Additionally, I like watching tutorials online to create and learn different visual effects using AfterEffect. </p>
+      </div>
+      <div class="col right">
+        <img src="imgs/myself.jpg" alt="Picture of myself">
+        <h2>Contact me:</h2>
+        <p><span>Email:</span> jeffreychen1124@gmail.com</p>
+        <h2>Lets chat:</h2>
+        <div class="contact">
+          <a href="https://www.linkedin.com/in/jeffrey-chen-huaiyan" class="text-link"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/jeffrey.chen.509994/" class="text-link"><i class="fab fa-facebook-square"></i></a>
+          <a class="text-link" onclick="popup()"><i class="fab fa-weixin"></i></a>
+        </div>
+
+    </div>
+  </div>
+  </div>
+
+  <!-- pop up review section -->
+  <div class="popup" id="wechat-popup">
+    <div class="overlay" onclick="popup()"></div>
+    <div class="content">
+      <p>Scan to add me on Wechat<p>
+      <img src="imgs/code.jpg" alt="wechat QRcode">
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="myFooter">
+      <p><i class="far fa-copyright"></i>2021 by Jeffrey Chen | <a href="Template.html">StyleGuide</a> | <a href="citation.html">Citation</a> | <a href="https://github.com/jeffrey1124/iat339-p03">Github</a></p>
+
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html{
+  font-size: 16px;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -286,6 +290,13 @@ body {
   font-weight: 500;
 }
 
+#aboutmyself{
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
 h3 {
   width: 60%;
   margin-left: auto;
@@ -315,6 +326,7 @@ h3 {
   margin-top: 1rem;
   margin-bottom: 2rem;
   width: 100%;
+  height: auto;
 }
 
 .p1 {
@@ -362,6 +374,11 @@ h3 {
   padding-bottom: 1rem;
 }
 
+.p4{
+  background-color: #d5cdfe;
+  padding-bottom: 1rem;
+}
+
 .pj-head {
   padding-top: 2rem;
   margin-bottom: 2rem;
@@ -403,6 +420,25 @@ h3 {
 
 .right {
   width: 25%;
+}
+
+.right img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.contact{
+  display: flex;
+}
+
+.contact i{
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.right a{
+
 }
 
 .two-col {
@@ -536,11 +572,57 @@ h3 {
   .prev, .next, .slidetext {
     font-size: 11px;
   }
+  html{
+    font-size: 11px;
+  }
 }
+
+
+/* popup window for writting review */
+.popup .overlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  background:rgba(0,0,0,0.7);
+  z-index:1;
+  display:none;
+}
+
+.popup .content {
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  background:white;
+  z-index:2;
+  text-align:center;
+  padding:1rem;
+}
+
+.popup .content p{
+  font-size: 1.5rem;
+}
+
+.popup img{
+  width: 100%;
+  height: auto;
+}
+
+.popup.active .overlay {
+  display:block;
+}
+
+.popup.active .content {
+  transition:all 350ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}
+
+
 
 /* footer */
 .myFooter {
-  left: 0;
   bottom: 0;
   width: 100%;
   background-color: #53565A;
