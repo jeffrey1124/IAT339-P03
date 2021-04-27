@@ -7,7 +7,7 @@
 }
 
 html{
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 body {
@@ -187,12 +187,6 @@ body {
   display: flex;
 }
 
-.myName {
-  display: block;
-  color: #fff;
-  font-size: 60px;
-  font-weight: 400;
-}
 
 .wrapper .static-txt {
   color: #fff;
@@ -216,7 +210,7 @@ body {
   margin-left: 1rem;
   list-style: none;
   color: #009CCF;
-  font-size: 60px;
+  font-size:60px;
   font-weight: 500;
   position: relative;
   top: 0;
@@ -570,10 +564,10 @@ h3 {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 422px) {
   .prev, .next, .slidetext {
-    font-size: 11px;
+    font-size: 0.85rem;
   }
   html{
-    font-size: 11px;
+    font-size: 0.85rem;
   }
 }
 
