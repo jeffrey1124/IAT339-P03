@@ -8,6 +8,8 @@
 
 html{
   font-size: 1rem;
+  position:relative;
+  min-height: 100%;
 }
 
 body {
@@ -323,6 +325,21 @@ h3 {
   height: auto;
 }
 
+.two-col .demo img{
+  width:50%;
+  margin-bottom: 1rem;
+}
+
+.two-col .demo p{
+  text-align: center;
+  font-weight: 600;
+}
+
+.long-img img{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
 .p1 {
   width: 70%;
   margin: 2rem auto 2rem auto;
@@ -368,8 +385,13 @@ h3 {
   padding-bottom: 1rem;
 }
 
-.p4{
+/* .p4{
   background-color: #d5cdfe;
+  padding-bottom: 1rem;
+} */
+
+.p5{
+  background-color: #f1e6ff;
   padding-bottom: 1rem;
 }
 
@@ -617,6 +639,8 @@ h3 {
 
 /* footer */
 .myFooter {
+  position: absolute;
+  left: 0;
   bottom: 0;
   width: 100%;
   background-color: #53565A;

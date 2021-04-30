@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 3</title>
+  <script src="https://kit.fontawesome.com/6318b47d97.js"></script>
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Top Navigation -->
+  <nav class="topnav" id="myTopnav">
+    <a href="Home.html" class="myName">Jeffrey Chen</a>
+    <div class="toright">
+      <a href="Home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Projects
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="project1.html">Project 1</a>
+          <a href="project2.html">Project 2</a>
+          <a href="project3.html">Project 3</a>
+        </div>
+      </div>
+      <a href="fun.html">Film For Fun</a>
+      <a href="about.html">About Me</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+  </nav>
+
+  <div class="pj-banner">
+    <img src="imgs/banner6.png" alt="A picture with three laptop.">
+  </div>
+
+  <div class="p1">
+    <h1>Vibes</h1>
+    <div class="project-list">
+      <div class="col left">
+        <h2>Overview</h2>
+        <p>In this project, we need to design and implement an application that uses multiple mobile device features in an interesting and useful way. My teammates and I decided to create a music player app with a variety of functions to enhance the
+          user experience.</p>
+        <br>
+        <h2>Design focus</h2>
+        <p>We intend to build a music player with a variety of functions to enhance user experience. The application will feature user-friendly UI supporting minor user preference settings and a one-time login functionality upon launching the
+          application.
+        </p>
+      </div>
+      <div class="col right">
+        <h2>Other Info:</h2>
+        <p><span>Team size: </span>2 <br>(Jeffrey Chen & Ken Hsueh)</p>
+        <p><span>Duration: </span>Oct 2020 - Dec 2020 (6 weeks) </p>
+        <p><span>Tools: </span>Android Studio, Figma </p>
+        <p><span>My role: </span>App developer & User Interface Designer</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="p5">
+    <div class="p1">
+      <p class="pj-head">Process Analysis + Challenges</p>
+      <div class="project-list">
+        <div class="two-col">
+          <img src="imgs/p3-01.png" alt="an image from project 3">
+          <a href="#sl" class="text-link">View in details <i class="far fa-images"></i></a>
+        </div>
+        <div class="two-col">
+          <h2>Create application proposal</h2>
+          <p><span>My role in this stage:</span></p>
+          <ul>
+            <li>Come up with the functionalities of our app with my teammate.</li>
+            <li>Create the application flow.</li>
+            <li>Draw low-fidelity interface sketches.</li>
+            <li>Create low-fidelity Prototypes with Figma.</li>
+          </ul>
+          <p><span>Challenges:</span></p>
+          <ul>
+            <li>This project started in the middle of the course which we only learn some basic of Android Studio.</li>
+            <li>We are not sure what Android Studio can do and it is hard to determine the scope of our project.</li>
+          </ul>
+          <p><span>How we solve:</span></p>
+          <p>First, we came up with the idea of building a music player. We started to do some research about creating a music player with Android Studio. Additionally, we asked for some previous student projects from our professor to get a better
+            idea of the expectation of this project. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p1">
+    <div class="project-list">
+      <div class="two-col">
+        <img src="imgs/p3-02.png" alt="an image from project 2">
+        <a href="#sl" class="text-link">View in details <i class="far fa-images"></i></a>
+      </div>
+      <div class="two-col">
+        <h2>Building the basic functionality of the applicaiton</h2>
+        <p><span>My role in this stage:</span></p>
+        <ul>
+          <li>Build the login, register and playlist interface. </li>
+          <li>Implement a SQLite database to store the account information.</li>
+          <li>Make the rotation animation when playing the music.</li>
+          <li>Implement the accelerometer sensor to detect shaking events on users’ phone and it will skip to the next song.</li>
+        </ul>
+        <p><span>Challenges:</span></p>
+        <ul>
+          <li>We had trouble in figuring out the implementation of GPS functionality specifically in utilizing the location to recommend an exclusive playlist.</li>
+          <li>It is not applicable as we would have to set up individual lists for all the countries across the world (195 lists).</li>
+
+        </ul>
+        <p><span>How we solve:</span></p>
+        <p>Our team decided to use a region-based solution that only have 7 continents (Asia, Africa, North America, South America, Antarctica, Europe, and Australia). In other words, we can create 7 different music lists that represent each
+          continent.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="p5">
+    <div class="p1">
+      <p class="pj-head">Final version + Reflection</p>
+      <div class="long-img">
+        <img src="imgs/p3-03.png" alt="images from project 3">
+      </div>
+      <p>Overall, this project is successful. Although my teammate was in a different time zone due to the pandemic, we still managed to complete most of the functionalities of the application. The function that allows users to create their personal
+        playlists was not implemented because we ran out of time to explore it. This also taught us a lesson about the importance of time management. </p>
+      <h2>Some Takeaways from this project:</h2>
+      <ul>
+        <li><span>Always keep an eye on the visual hierarchy of your design.</span> Visual hierarchy makes it easy for a user to quickly skim the page and distinguish between the important and less important information. </li>
+        <li><span>It is a good idea to have onboarding pages for first-time users.</span> Especially in the situation when the user doesn't know where to start by just looking at the homepage of your app. </li>
+      </ul>
+      <h2>Demo of the app</h2>
+      <div class="project-list">
+        <div class="two-col">
+          <div class="demo">
+            <img src="imgs/acc.gif" alt="Demo of the APP">
+            <p>Account & Setting operations</p>
+          </div>
+
+        </div>
+        <div class="two-col">
+          <div class="demo">
+            <img src="imgs/music.gif" alt="Demo of the APP">
+            <p>Music & Search & Location operations</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="demo">
+        <img src="imgs/demo.gif" alt="Demo of the APP">
+      </div> -->
+
+    </div>
+  </div>
+
+  <!-- slideshow -->
+  <div class="p1" id="sl">
+    <p class="pj-head">Project slideshow</p>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade" style="display: block;">
+        <div class="numbertext">1 / 6</div>
+        <img src="imgs/p03-s1.png" alt="Applicaiton flow">
+        <div class="slidetext">Applicaiton flow</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img src="imgs/p03-s2.png" alt="Low-fidelity sketches">
+        <div class="slidetext">Low-fidelity sketches</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img src="imgs/p03-s3.png" alt="Low-fidelity prototypes 1 of 2">
+        <div class="slidetext">Low-fidelity prototypes 1 of 2 </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="imgs/p03-s4.png" alt="Low-fidelity prototypes 2 of 2">
+        <div class="slidetext">Low-fidelity prototypes 2 of 2</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="imgs/p03-s5.png" alt="Final version 1 of 2">
+        <div class="slidetext">Final version 1 of 2</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="imgs/p03-s6.png" alt="Final version 2 of 2">
+        <div class="slidetext">Final version 2 of 2</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+      <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="myFooter">
+      <p><i class="far fa-copyright"></i>2021 by Jeffrey Chen | <a href="Template.html">StyleGuide</a> | <a href="citation.html">Citation</a> | <a href="https://github.com/jeffrey1124/iat339-p03">Github</a></p>
+
+    </div>
+  </footer>
+</body>
+
+</html>
